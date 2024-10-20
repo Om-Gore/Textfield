@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+  .rounded-inherit {
+    border-radius: inherit;
+  }
+
+  .font-inherit {
+    font: inherit;
+  }
+
+  .duration-50 {
+    transition-duration: 50ms;
+  }
+
+  .delay-50 {
+    transition-delay: 50ms;
+  }
+
+  .border-black-87 {
+    border-color: rgba(0, 0, 0, 0.87);
+  }
+
+  .border-black-42 {
+    border-color: rgba(0, 0, 0, 0.42);
+  }
+
+  .color-black-54 {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .color-black-87 {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .color-black-38 {
+    color: rgba(0, 0, 0, 0.38);
+  }
+
+  @keyframes mui-auto-fill-cancel {
+    from {
+      animation-name: none;
+    }
+  }
+
+  /* Custom animation utility */
+  .animation-mui-auto-fill-cancel {
+    animation: mui-auto-fill-cancel 10ms;
+  }
+
+  .tap-highlight-transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .animation-duration-10ms {
+    animation-duration: 10ms;
+  }
 }

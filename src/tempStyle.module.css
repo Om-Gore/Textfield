@@ -1,0 +1,25 @@
+.styled-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border: 2px solid green;
+  width: 40vw;
+  height: auto;
+}
+
+/* .styled-container > div {
+  position: relative;
+  margin: 20px;
+}
+
+.styled-container > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  bottom: 0;
+  height: 1px;
+  background-color: rgb(216, 3, 202);
+} */
